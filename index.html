@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>StudentHub - Student Information Management System</title>
-<meta name="description" content="StudentHub - a cloud-based Student Information Management System. Add, view, search, update and delete student records. Three-tier architecture on Vercel, Render and MongoDB Atlas.">
+<title>student_API - Student Information Management System</title>
+<meta name="description" content="student_API - a cloud-based Student Information Management System. Add, view, search, update and delete student records. Three-tier architecture on Vercel, Render and MongoDB Atlas.">
 <meta name="theme-color" content="#0b0b0c">
-<meta property="og:title" content="StudentHub - Student Information Management System">
+<meta property="og:title" content="student_API - Student Information Management System">
 <meta property="og:description" content="Manage student records with a modern three-tier cloud app.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b0b0c'/%3E%3Cpath d='M16 7 4 13l12 6 12-6z' fill='%23fff'/%3E%3Cpath d='M9 17v5c0 2 3 4 7 4s7-2 7-4v-5l-7 3.5z' fill='%23fff'/%3E%3C/svg%3E">
@@ -520,9 +520,9 @@ dialog.modal{border:2px solid var(--ink);border-radius:14px;box-shadow:8px 8px 0
 <a class="sr-only" href="#main">Skip to content</a>
 <header class="nav">
   <div class="container nav-inner">
-    <a href="#/home" class="brand" aria-label="StudentHub home">
+    <a href="#/home" class="brand" aria-label="student_API home">
       <svg class="i i-fill" aria-hidden="true"><use href="#cap"/></svg>
-      StudentHub
+      student_API
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a href="#/home" data-nav="home">Home</a>
@@ -588,7 +588,7 @@ dialog.modal{border:2px solid var(--ink);border-radius:14px;box-shadow:8px 8px 0
             <div class="lt-bar"><i></i><i></i><i></i></div>
             <div class="lt-screen">
               <aside class="lt-side">
-                <div class="lt-logo"><svg class="i i-fill"><use href="#cap"/></svg>StudentHub</div>
+                <div class="lt-logo"><svg class="i i-fill"><use href="#cap"/></svg>student_API</div>
                 <ul class="lt-nav">
                   <li class="on"><svg class="i"><use href="#grid"/></svg>Dashboard</li>
                   <li><svg class="i"><use href="#plus"/></svg>Add Student</li>
@@ -623,7 +623,7 @@ dialog.modal{border:2px solid var(--ink);border-radius:14px;box-shadow:8px 8px 0
 
           <div class="phone">
             <div class="ph-notch"></div>
-            <div class="ph-top"><span><svg class="i i-fill"><use href="#cap"/></svg>StudentHub</span><svg class="i"><use href="#menu"/></svg></div>
+            <div class="ph-top"><span><svg class="i i-fill"><use href="#cap"/></svg>student_API</span><svg class="i"><use href="#menu"/></svg></div>
             <div class="ph-stat"><div><small>Total Students</small><b>5</b></div><svg class="i"><use href="#users"/></svg></div>
             <div class="ph-list">
               <h6>Recent Students</h6>
@@ -756,7 +756,7 @@ dialog.modal{border:2px solid var(--ink);border-radius:14px;box-shadow:8px 8px 0
     <div class="page-head" style="margin-bottom:0">
       <div>
         <div class="eyebrow">About</div>
-        <h1 class="h2" id="h-about">How StudentHub Works</h1>
+        <h1 class="h2" id="h-about">How student_API Works</h1>
         <p class="page-sub">A Student Information Management System split into three independently deployed tiers.</p>
       </div>
     </div>
@@ -839,8 +839,8 @@ dialog.modal{border:2px solid var(--ink);border-radius:14px;box-shadow:8px 8px 0
 
 <footer class="footer">
   <div class="container foot-inner">
-    <a href="#/home" class="brand"><svg class="i i-fill" aria-hidden="true"><use href="#cap"/></svg>StudentHub</a>
-    <p class="copy">&copy; <span id="yr">2026</span> StudentHub. All rights reserved.</p>
+    <a href="#/home" class="brand"><svg class="i i-fill" aria-hidden="true"><use href="#cap"/></svg>student_API</a>
+    <p class="copy">&copy; <span id="yr">2026</span> student_API. All rights reserved.</p>
     <nav class="foot-links" aria-label="Footer">
       <a href="#/home">Home</a><a href="#/students">Students</a><a href="#/add">Add Student</a><a href="#/about">About</a>
     </nav>
@@ -860,7 +860,7 @@ dialog.modal{border:2px solid var(--ink);border-radius:14px;box-shadow:8px 8px 0
   </div>
 </dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<noscript><p style="padding:24px;text-align:center">Please enable JavaScript to use StudentHub.</p></noscript>
+<noscript><p style="padding:24px;text-align:center">Please enable JavaScript to use student_API.</p></noscript>
 <script>
 (function () {
   'use strict';
@@ -879,12 +879,12 @@ dialog.modal{border:2px solid var(--ink);border-radius:14px;box-shadow:8px 8px 0
 
   /* ---------- Theme ---------- */
   var saved = null;
-  try { saved = localStorage.getItem('studenthub-theme'); } catch (e) {}
+  try { saved = localStorage.getItem('student_API-theme'); } catch (e) {}
   if (saved === 'dark') root.setAttribute('data-theme', 'dark');
   $('themeToggle').addEventListener('click', function () {
     var dark = root.getAttribute('data-theme') === 'dark';
     if (dark) root.removeAttribute('data-theme'); else root.setAttribute('data-theme', 'dark');
-    try { localStorage.setItem('studenthub-theme', dark ? 'light' : 'dark'); } catch (e) {}
+    try { localStorage.setItem('student_API-theme', dark ? 'light' : 'dark'); } catch (e) {}
   });
 
   /* ---------- Mobile menu ---------- */
@@ -1190,7 +1190,7 @@ dialog.modal{border:2px solid var(--ink);border-radius:14px;box-shadow:8px 8px 0
   $('recheck').addEventListener('click', checkConn);
 
   /* ---------- Router ---------- */
-  var TITLES = { home: 'StudentHub - Student Information Management System', students: 'Students | StudentHub', add: 'Add Student | StudentHub', edit: 'Edit Student | StudentHub', about: 'About | StudentHub' };
+  var TITLES = { home: 'student_API - Student Information Management System', students: 'Students | student_API', add: 'Add Student | student_API', edit: 'Edit Student | student_API', about: 'About | student_API' };
   var firstRoute = true;
 
   function route() {
